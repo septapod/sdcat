@@ -1,8 +1,8 @@
 body { padding-right: 0px; padding-left: 0px; }
-table { font-size: 14px; float: left; }
+table { font-size: 18px; float: left; }
 .table th,
 .table td { text-align: left }
-.table th { font-size: 14px }
+.table th { font-size: 18px }
 .table thead th { vertical-align: middle; cursor: pointer; }
 tr.odd {background-color: #e8e8e8;}
 tr.even {background-color: white;}
