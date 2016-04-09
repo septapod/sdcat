@@ -29,7 +29,7 @@ function createTableColumns(){
 		{"mDataProp": "title", "sTitle": "Project Title", "sClass": "center"},
 		//{"mDataProp": "url", "sTitle": "URL", "sClass": "center"},
 		{"mDataProp": "description", "sTitle": "Description", "sClass": "center"},
-		//{"mDataProp": "tags", "sTitle": "Tags", "sClass": "center"},
+		{"mDataProp": "tags", "sTitle": "Tags", "sClass": "center"},
 	];
     return tableColumns;
 }
@@ -44,9 +44,9 @@ function writeTableWith(dataSource){
         "iDisplayLength": 25,
         "aaData": dataSource,
         "aoColumns": createTableColumns(),
-        "fnRowCallback": function(nRow, aData, iDisplayIndex) {
-            console.log(aData);
-            $("td:eq(0)", nRow).html("<a href='http://" + aData.url + "'>"+ aData.title +"</a>");
+        "fnRowCallback": function(nRow, aaData, iDisplayIndex) {
+            console.log(aaData);
+            $("td:eq(0)", nRow).html("<a href='http://" + aaData.url + "'>"+ aaData.title +"</a>");
             return nRow;
         },
         "oLanguage": {
