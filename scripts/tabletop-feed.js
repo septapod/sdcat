@@ -29,7 +29,7 @@ function createTableColumns(){
 		{"mDataProp": "title", "sTitle": "Project Title", "sClass": "center"},
 		//{"mDataProp": "url", "sTitle": "URL", "sClass": "center"},
 		{"mDataProp": "description", "sTitle": "Description", "sClass": "center"},
-		{"mDataProp": "tags", "sTitle": "Tags", "sClass": "center"},
+		//{"mDataProp": "tags", "sTitle": "Tags", "sClass": "center"},
 	];
     return tableColumns;
 }
