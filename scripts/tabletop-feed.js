@@ -26,7 +26,7 @@ function createTableColumns(){
     is what happens with the More Info column header */
 
     var tableColumns =   [
-		{"mDataProp": "title", "sTitle": "Project Title", "sClass": "center"},
+		{"mDataProp": "project", "sTitle": "Project Title", "sClass": "center"},
 		//{"mDataProp": "url", "sTitle": "URL", "sClass": "center"},
 		{"mDataProp": "description", "sTitle": "Description", "sClass": "center"},
 		//{"mDataProp": "tags", "sTitle": "Tags", "sClass": "center"},
@@ -46,7 +46,10 @@ function writeTableWith(dataSource){
         "aoColumns": createTableColumns(),
         "fnRowCallback": function(nRow, aaData, iDisplayIndex) {
             console.log(aaData);
-            $("td:eq(0)", nRow).html("<a href='http://" + aaData.url + "'>"+ aaData.title +"</a>");
+            $("td:eq(0)", nRow).html('<a href="' + aaData.url + '">'+ aaData.project + '</a>');
+            
+       
+                
             return nRow;
         },
         "oLanguage": {
